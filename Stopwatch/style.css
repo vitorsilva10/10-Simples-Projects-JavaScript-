@@ -1,0 +1,47 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #777D94;
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            min-height: 100vh;
+        }
+        
+        .wrapper {
+            width: 700px;
+            height: 50vh;
+            background-color: #2E2F41;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            position: relative;
+            transform: translate(50%, 50%);
+        }
+        
+        #seconds,
+        #tens,
+        #minute {
+            position: relative;
+            top: 150px;
+            font-size: 4em;
+            text-align: center;
+        }
+        
+        #seconds::after,
+        #minute::after {
+            content: ' : ';
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .btn {
+            width: 100px;
+            height: 60px;
+            position: relative;
+            margin-right: 10px;
+            top: 50%;
+            color: black;
+            border-radius: 10%;
+        }
